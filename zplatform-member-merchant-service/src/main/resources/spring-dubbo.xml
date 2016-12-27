@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	<dubbo:service interface="com.zlebank.zplatform.member.merchant.service.EnterpriseRealnameApplyService" ref="enterpriseRealnameApplyService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.merchant.service.EnterpriseService" ref="enterpriseService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.merchant.service.MerchMKService" ref="merchMKService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.merchant.service.MerchService" ref="merchService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.merchant.service.ManagerService" ref="managerService" retries="3" version="1.0"/>
+	
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberAccountService" ref="memberAccountService" retries="3" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberApplyService" ref="memberApplyService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberBankCardService" ref="memberBankCardService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberInfoService" ref="memberInfoService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberOperationService" ref="memberOperationService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.MemberService" ref="memberService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.PersonService" ref="personService" retries="0" timeout="30000" version="1.0"/>
+	<dubbo:service interface="com.zlebank.zplatform.member.individual.service.PrimayKeyService" ref="primayKeyService" retries="0" timeout="30000" version="1.0"/>
+</beans>
